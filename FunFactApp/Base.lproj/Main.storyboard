@@ -34,6 +34,9 @@
                                         <state key="normal" title="True" backgroundImage="Border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="aButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbP-YI-ing"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVU-wI-cHW">
                                         <rect key="frame" x="0.0" y="659" width="361" height="80"/>
@@ -45,6 +48,9 @@
                                         <state key="normal" title="False" backgroundImage="Border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="aButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9H-5I-uOO"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-jc-8Ua">
                                         <rect key="frame" x="0.0" y="749" width="361" height="10"/>
