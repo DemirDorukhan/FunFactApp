@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA767FA2BC46C77003EBBBB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA767F92BC46C77003EBBBB /* Question.swift */; };
 		ECF7FBBF2BC2AC2F00088311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7FBBE2BC2AC2F00088311 /* AppDelegate.swift */; };
 		ECF7FBC12BC2AC2F00088311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7FBC02BC2AC2F00088311 /* SceneDelegate.swift */; };
 		ECF7FBC32BC2AC2F00088311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7FBC22BC2AC2F00088311 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECA767F92BC46C77003EBBBB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		ECF7FBBB2BC2AC2E00088311 /* FunFactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF7FBBE2BC2AC2F00088311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF7FBC02BC2AC2F00088311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				ECF7FBBE2BC2AC2F00088311 /* AppDelegate.swift */,
 				ECF7FBC02BC2AC2F00088311 /* SceneDelegate.swift */,
 				ECF7FBC22BC2AC2F00088311 /* ViewController.swift */,
+				ECA767F92BC46C77003EBBBB /* Question.swift */,
 				ECF7FBC42BC2AC2F00088311 /* Main.storyboard */,
 				ECF7FBC72BC2AC3000088311 /* Assets.xcassets */,
 				ECF7FBC92BC2AC3000088311 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF7FBC32BC2AC2F00088311 /* ViewController.swift in Sources */,
+				ECA767FA2BC46C77003EBBBB /* Question.swift in Sources */,
 				ECF7FBBF2BC2AC2F00088311 /* AppDelegate.swift in Sources */,
 				ECF7FBC12BC2AC2F00088311 /* SceneDelegate.swift in Sources */,
 			);

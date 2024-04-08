@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var falseButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     
-    //lets create a questions 2Darray
+    //lets create an Question Struct Array
     let questions = [
-    ["2 + 2 = 5", "False"],
-    ["3 + 5 = 8", "True"],
-    ["4 + 3 = 7", "True"]
+    Question(q: "2 + 2 = 5", a: "False"),
+    Question(q: "3 + 4 = 7", a: "True"),
+    Question(q: "5 + 4 = 9", a: "True")
     ]
     
     var question_number = 0
@@ -34,11 +34,12 @@ class ViewController: UIViewController {
     @IBAction func aButtonPressed(_ sender: UIButton) {
         
         let user_answer = sender.currentTitle //String True or False
-        let actual_answer = questions[question_number][1]
+        let actual_answer = questions[question_number].answer
+        
         if user_answer == actual_answer {
-            print("Right")
+            sender.backgroundColor = UIColor.green
         }else{
-            print("Wrong")
+            sender.backgroundColor = UIColor.red
         }
         
         if question_number + 1 < questions.count {
@@ -47,13 +48,22 @@ class ViewController: UIViewController {
             question_number = 0
         }
         
-        updateUI()
+        //Added a timer for ui background color effect.
+        Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        
     }
     
     
     // In order keep it changing, I actually need a func so I can trigger it whenever I want.
-    func updateUI() {
-        questionLabel.text = questions[question_number][0]
+    @objc func updateUI() {
+        
+        questionLabel.text = questions[question_number].text
+        
+        trueButton.backgroundColor = UIColor.clear
+        falseButton.backgroundColor = UIColor.clear
+        
+        //Progressbar was activated.
+        progressBar.progress = Float(question_number + 1) / Float(questions.count)
     }
 
 
