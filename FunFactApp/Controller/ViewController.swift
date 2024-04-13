@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var trueButton: UIButton!
-    @IBOutlet weak var falseButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var choice1: UIButton!
+    @IBOutlet weak var choice2: UIButton!
+    @IBOutlet weak var choice3: UIButton!
     
     var questionBox = QuestionBox()
     
@@ -45,12 +47,18 @@ class ViewController: UIViewController {
     // In order keep it changing, I actually need a func so I can trigger it whenever I want.
     @objc func updateUI() {
         
+        let answers = questionBox.getAnswers()
+        choice1.setTitle(answers[0], for: .normal)
+        choice2.setTitle(answers[1], for: .normal)
+        choice3.setTitle(answers[2], for: .normal)
+        
         questionLabel.text = questionBox.getText()
         progressBar.progress = questionBox.getProgress()
         scoreLabel.text = "Score: \(questionBox.getScore())"
         
-        trueButton.backgroundColor = UIColor.clear
-        falseButton.backgroundColor = UIColor.clear
+        choice1.backgroundColor = UIColor.clear
+        choice2.backgroundColor = UIColor.clear
+        choice3.backgroundColor = UIColor.clear
         
     }
 
