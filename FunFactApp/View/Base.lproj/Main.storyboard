@@ -18,8 +18,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-vH-fgI">
                                 <rect key="frame" x="16" y="59" width="361" height="759"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4I-RW-TkP">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="96.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l44-c1-sHQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="559"/>
+                                        <rect key="frame" x="0.0" y="106.33333333333334" width="361" height="452.66666666666663"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -77,6 +83,7 @@
                         <outlet property="falseButton" destination="iVU-wI-cHW" id="jFX-sD-QX1"/>
                         <outlet property="progressBar" destination="EIM-jc-8Ua" id="QQk-Cd-OD8"/>
                         <outlet property="questionLabel" destination="l44-c1-sHQ" id="xW5-lM-ICf"/>
+                        <outlet property="scoreLabel" destination="s4I-RW-TkP" id="NB8-hN-VVd"/>
                         <outlet property="trueButton" destination="mNv-Vf-f8O" id="d5V-cu-gYq"/>
                     </connections>
                 </viewController>

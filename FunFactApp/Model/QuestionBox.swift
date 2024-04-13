@@ -17,13 +17,19 @@ struct QuestionBox{
     ]
     
     var question_number = 0
+    var score = 0
     
-    func checkAnswer(_ userAnswer : String) -> Bool {
+    mutating func checkAnswer(_ userAnswer : String) -> Bool {
         if userAnswer == questions[question_number].answer{
+            score += 1
             return true
         }else{
             return false
         }
+    }
+    
+    func getScore() -> Int {
+        return score
     }
     
     func getText() -> String {
@@ -40,6 +46,7 @@ struct QuestionBox{
             question_number += 1
         }else{
             question_number = 0
+            score = 0
         }
     }
 }
