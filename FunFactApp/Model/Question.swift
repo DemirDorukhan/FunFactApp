@@ -8,11 +8,13 @@
 import Foundation
 
 struct Question {
-    let text : String
-    let answer : String
+    let question : String
+    let answers : [String]
+    let rightAnswer : String
     
-    init(q: String, a: String){
-        text = q
-        answer = a
+    init(q: String, a : [String], correctAnswer: String){
+        question = q
+        answers = a
+        rightAnswer = correctAnswer
     }
 }
